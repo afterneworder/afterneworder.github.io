@@ -1,0 +1,226 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica, sans-serif;
+	word-break: keep-all;
+}
+
+h1 img {
+  animation-name: spin;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; /* Make it continuous */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* End at 360 degrees (one full rotation) */
+  }
+}
+
+a {
+	color: white;
+	text-underline-offset: 3px;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 50%;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; /* 0% 시점: 보임 */
+  }
+  50% {
+    opacity: 0; /* 50% 시점: 안 보임 */
+  }
+  100% {
+    opacity: 1; /* 100% 시점: 다시 보임 */
+  }
+}
+
+
+body {
+	color: white;
+	-ms-overflow-style: none; 	
+	overflow-y: hidden;
+}
+
+body::-webkit-scrollbar { 
+	display: none; 
+} 
+
+video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: auto;
+}
+
+header {
+	position: absolute;
+	left: 16px;
+	bottom: 16px;
+}
+
+section {
+	overflow-y: auto;
+	-ms-overflow-style: none; 	
+}
+
+section::-webkit-scrollbar { 
+	display: none; 
+} 
+
+img {
+	width: 100px;
+}
+
+h1,
+h2,
+th {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+h2 {
+	letter-spacing: 6px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.upcoming,
+.past {
+	position: absolute;
+	width: calc((100% - 48px) / 2);
+	height: calc(100% - 32px);
+	top: 16px;
+}
+
+.upcoming {
+	left: 16px;
+}
+
+.past {
+	right: 16px;
+}
+
+.ggbb {
+	 animation: blink 1s infinite;
+}
+table,
+th {
+	text-align: left;
+}
+
+table {
+	width: 100%;
+	border-spacing: 6px;
+	overflow-y: scroll;
+}
+
+th,
+td {
+	border-top: 1px solid white;
+	padding-top: 2px;
+}
+
+td {
+	vertical-align: top;
+}
+
+.round {
+	width: 5%;
+}
+
+.date {
+	width: 15%;
+	padding-right: 5px;
+}
+
+.time {
+	width: 15%;
+	padding-right: 5px;
+}
+
+.address {
+	width: 65%;
+}
+
+@media screen and (max-aspect-ratio: 9/16) {
+
+	video {
+		height: 140%;
+		width: auto;
+		top: auto;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 10%);
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	body {
+		overflow-y: auto;
+	}
+
+	img {
+		width: 85px;
+	}
+
+	header {
+		position: relative;
+		top: 16px;
+		left: 0;
+		height: 120px;
+		text-align: center;
+	}
+
+	video {
+		position: fixed;
+	}
+
+	.upcoming,
+	.past {
+		position: relative;
+		width: calc(100% - 16px);
+		top: 0px;
+		left: 8px;
+	}
+
+	section {
+		margin-top: 32px;
+	}
+
+	.past {
+		right: 0;
+		margin-bottom: 32px;
+	}
+
+	.round {
+		position: relative;
+		left: 0;
+		width: 5%;
+	}
+
+	.date {
+		width: 15%;
+	}
+
+	.time {
+		width: 15%;
+		word-break: keep-all;
+	}
+
+	.address {
+		width: 65%;
+	}
+}

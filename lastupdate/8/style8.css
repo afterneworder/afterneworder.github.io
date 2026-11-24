@@ -1,0 +1,435 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica, sans-serif;
+	word-break: keep-all;
+}
+
+header {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+}
+
+h1, 
+h2 {
+	width: 100%;
+	text-align: center;
+}
+
+h1 a {
+	color: black;
+}
+
+h1,
+h2,
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+}
+
+h3 {
+	color: white;
+}
+
+.night {
+	background-color: #1C1C1C;
+}
+
+.car1 {
+	position: absolute;
+	width: 40%;
+	height: 30%;
+	top: 20px;
+	left: 20px;
+	background-color: #F2F2F2;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.car2 {
+	position: absolute;
+	width: 40%;
+	height: 30%;
+	top: 20px;
+	left: calc(40% + 40px);
+	background-color: #F2F2F2;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.toilet  {
+	position: absolute;
+	bottom: calc(30% + 20px);
+	background-color: #4D4D4D;
+	width: 10%;
+	height: 30%;
+	left: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stair {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 80%;
+	height: 30%;
+	background-color: #2E2E2E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outdoor {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 10%;
+	height: 30%;
+	background-color: #4D4D4D;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	text-align: center;
+}
+
+.escape {
+	position: absolute;
+	bottom: calc(65.5% + 20px);
+	right: 20px;
+	writing-mode: vertical-rl;
+}
+
+/* ----------- 실내 ----------- */
+
+.desk {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 15%;
+	height: 50%;
+	background-color: #C9C9C9;
+}
+
+.door {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 10%;
+	height: 30%;
+	background-color: #4D4D4D;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	text-align: center;
+}
+
+.pingpong {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 50%;
+	height: 50%;
+	background-color: #0A3094;
+}
+
+li {
+	list-style: none;
+}
+
+.pingpong ul {
+	width: 100%;
+	height: 100%;
+}
+
+.top,
+.bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px 0 20px 0;
+}
+
+.right,
+.left {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.right {
+	position: absolute;
+	right: 0;
+	padding: 0px 20px 0px 20px;	
+}
+
+.left {
+	padding: 0px 20px 0px 20px;	
+}
+
+.top {
+	position: absolute;
+	top: 0;
+}
+
+.right {
+	position: absolute;
+	right: 0;
+	text-align: right;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+.left {
+	position: absolute;
+	left: 0;
+}
+
+.tray {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #C9C9C9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.black {
+	color: black;
+}
+
+.imac {
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	width: 15%;
+	height: 45%;
+	background-color: #EDEDED;
+	color: black;
+	writing-mode: vertical-rl;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tissue {
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+	color: black;
+	text-align: center;
+}
+
+.dry {
+	width: 50px;
+	height: 50px;
+	background-color: #EDEDED;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.wet {
+	padding: 10px;
+	background-color: #EDEDED;
+}
+
+
+.tea {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.tea ul {
+	display: flex;
+	align-items: flex-end;
+}
+
+.tea ul li {
+	margin: 0 2.5px 0 2.5px;
+}
+
+.water,
+.pot {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.water {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #EDEDED;
+	color: black;
+}
+
+.pot {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	background-color: #4D4D4D;
+}
+
+.tray {
+	text-align: center;
+	width: 20%;
+	height: 20%;
+	padding: 30px;
+}
+
+.tangerine {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #FF9900;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 img {
+  animation-name: spin;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; /* Make it continuous */
+}
+
+iframe {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	width: 40%;
+	height: 40%;
+}
+
+.grayscale {
+	filter: grayscale(100%);
+}
+
+.more a {
+	position: absolute;
+	left: 36px;
+	bottom: 40%;
+	color: black;
+	transform: rotate(90deg);
+	transform-origin: top left;
+	color: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* End at 360 degrees (one full rotation) */
+  }
+}
+
+a {
+	color: white;
+	text-underline-offset: 3px;
+/*	 animation: blink 1s infinite;*/
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; /* 0% 시점: 보임 */
+  }
+  50% {
+    opacity: 0; /* 50% 시점: 안 보임 */
+  }
+  100% {
+    opacity: 1; /* 100% 시점: 다시 보임 */
+  }
+}
+
+
+body {
+	color: white;
+	-ms-overflow-style: none; 	
+	overflow-y: hidden;
+}
+
+body::-webkit-scrollbar { 
+	display: none; 
+} 
+
+
+@media screen and (max-aspect-ratio: 9/16) {
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+	.stair {
+		width: 55%;
+	}
+
+	.pingpong {
+		width: 50%;
+	}
+
+	.right,
+	.left {
+		width: 50%;
+	}
+
+	.door,
+	.outdoor,
+	.toilet {
+		width: 30%;
+	}
+
+	.desk {
+		width: 30%;
+	}
+
+	.water {
+		width: 30px;
+		height: 30px;
+	}
+
+	.pot {
+		width: 50px;
+		height: 50px;
+	}
+
+	.imac {
+		height: 40%;
+		width: 30%;
+		left: 30%;
+	}
+
+	iframe {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		width: calc(50% - 60px);
+		height: 40%;
+	}
+}
