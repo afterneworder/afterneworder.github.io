@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	word-break: break-all;
+	font-family: Times New Roman, serif;
+}
+
+body {
+	padding: 20px;
+}
+
+li {
+	list-style: none;
+	font-size: 120px;
+	line-height: 0.9;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li:hover {
+	text-decoration: underline;
+	text-underline-offset: 15px;
+	text-decoration-thickness: 6px;
+}
+
+.in {
+	padding-left: 180px;
+}
+
+#mail {
+	margin-top: 20px
+}
+@media screen and (max-width: 900px)  {
+
+}
+
+

@@ -1,0 +1,475 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	word-break: keep-all;
+}
+
+html {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: none;
+	font-family: sans-serif;
+	font-size: 0;
+}
+
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 5px 0 5px 5px;
+	text-align: center;
+}
+
+::-webkit-scrollbar { 
+	display: none;
+}
+
+li {
+	list-style: none;
+}
+
+.title {
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	text-decoration: none;
+	color: white;
+	width: calc(25% - 5px);
+	margin-right: 5px;
+	margin-bottom: 5px;
+	height: calc(50% - 2.5px);
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	padding: 14px;
+	
+}
+
+.word {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20vw;
+}
+
+.last {
+	font-size: 15px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.answer {
+	margin-bottom: 10px;
+}
+
+input {
+	margin-right: 5px;
+	margin-bottom: 30px;
+}
+
+label {
+	margin-right: 20px;
+	font-size: 15px;
+	text-align: left;
+}
+
+button {
+	background-color: black;
+	color: white;
+	border: white solid 1px;
+	padding: 3px;
+	margin: 5px;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+button a{
+	color: white;
+	text-decoration: none;
+}
+
+.category {
+	display: inline-block;
+	background-color: black;
+	color: white;
+	width: 150px;
+	padding: 5px;
+	cursor: pointer;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.faq {
+	position: relative;
+}
+
+a {
+	color: black;
+}
+
+#explain {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	font-size: 15px;
+	padding: 5px;
+}
+
+.saying {
+	position: relative;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	text-align: center;
+	font-size: 15px;
+}
+
+.two, 
+.three,
+.four,
+.five,
+.six,
+.seven {
+	display: none;
+}
+
+details {
+	font-size: 15px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+
+summary {
+	font-size: 15px;
+	outline: none;
+}
+
+details summary::-webkit-details-marker {
+	display: none;
+}
+
+div {
+	font-size: 15px;
+}
+
+.work {
+	display: inline-block;
+	width: 150px;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	margin-right: 5px;
+	text-align: left;
+}
+
+.info {
+	width: 150px;
+	padding: 5px;
+	text-align: left;
+}
+
+.info li {
+	word-break: break-word;
+}
+
+input[type="radio"][id="archi"]:checked ~ .craft, 
+input[type="radio"][id="archi"]:checked ~ .newme, 
+input[type="radio"][id="archi"]:checked ~ .drawing, 
+input[type="radio"][id="archi"]:checked ~ .print, 
+input[type="radio"][id="archi"]:checked ~ .design, 
+input[type="radio"][id="archi"]:checked ~ .photo, 
+input[type="radio"][id="archi"]:checked ~ .calli, 
+input[type="radio"][id="archi"]:checked ~ .sculpt, 
+input[type="radio"][id="archi"]:checked ~ .kp, 
+input[type="radio"][id="archi"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="craft"]:checked ~ .archi, 
+input[type="radio"][id="craft"]:checked ~ .newme, 
+input[type="radio"][id="craft"]:checked ~ .drawing, 
+input[type="radio"][id="craft"]:checked ~ .print, 
+input[type="radio"][id="craft"]:checked ~ .design, 
+input[type="radio"][id="craft"]:checked ~ .photo, 
+input[type="radio"][id="craft"]:checked ~ .calli, 
+input[type="radio"][id="craft"]:checked ~ .sculpt, 
+input[type="radio"][id="craft"]:checked ~ .kp, 
+input[type="radio"][id="craft"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="newme"]:checked ~ .archi, 
+input[type="radio"][id="newme"]:checked ~ .craft, 
+input[type="radio"][id="newme"]:checked ~ .drawing, 
+input[type="radio"][id="newme"]:checked ~ .print, 
+input[type="radio"][id="newme"]:checked ~ .design, 
+input[type="radio"][id="newme"]:checked ~ .photo, 
+input[type="radio"][id="newme"]:checked ~ .calli, 
+input[type="radio"][id="newme"]:checked ~ .sculpt, 
+input[type="radio"][id="newme"]:checked ~ .kp, 
+input[type="radio"][id="newme"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="drawing"]:checked ~ .archi, 
+input[type="radio"][id="drawing"]:checked ~ .craft, 
+input[type="radio"][id="drawing"]:checked ~ .newme, 
+input[type="radio"][id="drawing"]:checked ~ .print, 
+input[type="radio"][id="drawing"]:checked ~ .design, 
+input[type="radio"][id="drawing"]:checked ~ .photo, 
+input[type="radio"][id="drawing"]:checked ~ .calli, 
+input[type="radio"][id="drawing"]:checked ~ .sculpt, 
+input[type="radio"][id="drawing"]:checked ~ .kp, 
+input[type="radio"][id="drawing"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="print"]:checked ~ .archi, 
+input[type="radio"][id="print"]:checked ~ .craft, 
+input[type="radio"][id="print"]:checked ~ .newme, 
+input[type="radio"][id="print"]:checked ~ .drawing, 
+input[type="radio"][id="print"]:checked ~ .design, 
+input[type="radio"][id="print"]:checked ~ .photo, 
+input[type="radio"][id="print"]:checked ~ .calli, 
+input[type="radio"][id="print"]:checked ~ .sculpt, 
+input[type="radio"][id="print"]:checked ~ .kp, 
+input[type="radio"][id="print"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="design"]:checked ~ .archi, 
+input[type="radio"][id="design"]:checked ~ .craft, 
+input[type="radio"][id="design"]:checked ~ .newme, 
+input[type="radio"][id="design"]:checked ~ .drawing, 
+input[type="radio"][id="design"]:checked ~ .print, 
+input[type="radio"][id="design"]:checked ~ .photo, 
+input[type="radio"][id="design"]:checked ~ .calli, 
+input[type="radio"][id="design"]:checked ~ .sculpt, 
+input[type="radio"][id="design"]:checked ~ .kp, 
+input[type="radio"][id="design"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="photo"]:checked ~ .archi, 
+input[type="radio"][id="photo"]:checked ~ .craft, 
+input[type="radio"][id="photo"]:checked ~ .newme, 
+input[type="radio"][id="photo"]:checked ~ .drawing, 
+input[type="radio"][id="photo"]:checked ~ .print, 
+input[type="radio"][id="photo"]:checked ~ .design, 
+input[type="radio"][id="photo"]:checked ~ .calli, 
+input[type="radio"][id="photo"]:checked ~ .sculpt, 
+input[type="radio"][id="photo"]:checked ~ .kp, 
+input[type="radio"][id="photo"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="calli"]:checked ~ .archi, 
+input[type="radio"][id="calli"]:checked ~ .craft, 
+input[type="radio"][id="calli"]:checked ~ .newme, 
+input[type="radio"][id="calli"]:checked ~ .drawing, 
+input[type="radio"][id="calli"]:checked ~ .print, 
+input[type="radio"][id="calli"]:checked ~ .design, 
+input[type="radio"][id="calli"]:checked ~ .photo, 
+input[type="radio"][id="calli"]:checked ~ .sculpt, 
+input[type="radio"][id="calli"]:checked ~ .kp, 
+input[type="radio"][id="calli"]:checked ~ .paint {
+  display: none;
+}
+
+input[type="radio"][id="sculpt"]:checked ~ .archi, 
+input[type="radio"][id="sculpt"]:checked ~.craft, 
+input[type="radio"][id="sculpt"]:checked ~.newme, 
+input[type="radio"][id="sculpt"]:checked ~.drawing, 
+input[type="radio"][id="sculpt"]:checked ~.print, 
+input[type="radio"][id="sculpt"]:checked ~.design, 
+input[type="radio"][id="sculpt"]:checked ~.photo, 
+input[type="radio"][id="sculpt"]:checked ~.calli, 
+input[type="radio"][id="sculpt"]:checked ~.kp, 
+input[type="radio"][id="sculpt"]:checked ~.paint{
+  display: none;
+}
+
+input[type="radio"][id="kp"]:checked ~ .archi, 
+input[type="radio"][id="kp"]:checked ~ .craft, 
+input[type="radio"][id="kp"]:checked ~ .newme, 
+input[type="radio"][id="kp"]:checked ~ .drawing, 
+input[type="radio"][id="kp"]:checked ~ .print, 
+input[type="radio"][id="kp"]:checked ~ .design, 
+input[type="radio"][id="kp"]:checked ~ .photo, 
+input[type="radio"][id="kp"]:checked ~ .calli, 
+input[type="radio"][id="kp"]:checked ~ .sculpt, 
+input[type="radio"][id="kp"]:checked ~ .paint{
+  display: none;
+}
+
+input[type="radio"][id="paint"]:checked ~ .archi, 
+input[type="radio"][id="paint"]:checked ~.craft, 
+input[type="radio"][id="paint"]:checked ~.newme, 
+input[type="radio"][id="paint"]:checked ~.drawing, 
+input[type="radio"][id="paint"]:checked ~.print, 
+input[type="radio"][id="paint"]:checked ~.design, 
+input[type="radio"][id="paint"]:checked ~.photo, 
+input[type="radio"][id="paint"]:checked ~.calli, 
+input[type="radio"][id="paint"]:checked ~.sculpt, 
+input[type="radio"][id="paint"]:checked ~.kp {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+	* {
+		word-break: keep-all;
+		font-size: 0px;
+	}
+
+	html {
+		overflow: auto;
+	}
+
+	body {
+		width: 100%;
+		height: 100%;
+		padding: 5px 0 5px 5px;
+		text-align: left;
+	}
+
+	.title {
+		margin-right: 5px;
+		margin-bottom: 5px;
+		width: calc(50% - 5px);
+		height: 60vw;
+		font-size: 50vw;
+		position: relative;
+		background-color: black;
+		color: white;
+		display: inline-block;
+		text-align: center;
+ 	}
+
+ 	.word {
+ 		font-size: 40vw;
+ 	}
+
+	div p {
+		font-size: 15px;
+		color: white;
+		z-index: 99;
+		color: black;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		font-size: 15px;
+	}
+
+ 	.last p {
+		font-size: 15px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 99;
+		color: white;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		font-size: 15px;
+		color: black;
+	}
+
+	button {
+		margin-top: 8px;
+	}
+
+	button a {
+		font-size: 15px;
+		color: white;
+		text-decoration: none;
+	}
+
+	.category {
+		display: inline-block;
+		width: calc(33.3333% - 5px);
+		background-color: black;
+		color: white;
+		padding: 5px;
+		vertical-align: top;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	#explain {
+		display: inline-block;
+		position: relative;
+		height: 350px;
+		width: 100%;
+	}
+
+	.saying {
+		position: relative;
+		font-size: 15px;
+		width: 90%;
+	}
+
+	.saying p {
+		margin-bottom: 15px;
+	}
+
+	input {
+		margin-bottom: 10px;
+		display: inline-block;
+		text-align: center;
+	}
+
+	label {
+		margin-right: 0px;
+		width: 14%;
+		display: inline-block;
+		font-size: 15px;
+	}
+
+	div {
+		font-size: 15px;
+	}
+
+	p {
+		color: black;
+	}
+
+	cite {
+		font-size: 15px;
+		color: black;
+	}
+
+	details {
+		width: calc(33.3333% - 5px);
+		margin-right: 5px;
+	}
+
+	.work {
+		display: inline-block;
+		font-size: 15px;
+		width: 100%;
+	}
+
+	.info {
+		width: 100%;
+	}
+
+}
