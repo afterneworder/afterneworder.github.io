@@ -1,0 +1,849 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	word-break: keep-all;
+}
+
+@font-face {
+	font-family: SM3TaeMyungJo;
+	src: url(SM3TaeMyungJo.otf);
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: SM3TaeMyungJo;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+div {
+	font-size: 0;
+}
+
+xmp {
+	display: inline-block;
+}
+
+.reaosn p {
+	display: inline-block;
+}
+
+dl {
+	margin-bottom: 50px;
+}
+
+#sections,
+#grouping {
+	position: relative;
+	display: block;
+	height: 5vh;
+	margin-bottom: 15px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#textlevel {
+	position: relative;
+	display: block;
+	height: 20vh;
+	margin-bottom: 15px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#concon {
+	position: absolute;
+	display: inline-block;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 500px;
+}
+
+dl {
+	position: relative;
+	display: block;
+	font-size: 15px;
+}
+
+dt, dd {
+	margin: -5px 0 -5px 0;
+	white-space: normal;
+	line-height: 1.4;
+}
+
+dd {
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#apply p {
+	margin-bottom: 5px;
+}
+
+.saying p {
+	margin-bottom: 20px;
+}
+
+.btn {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+img:hover {
+	opacity: 0.5;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 900;
+  background-color: white;
+  opacity: 0.5;
+  color: white;
+  padding: 20px;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.logo {
+	position: relative;
+	bottom: 0.5vw;
+	width: 40px;
+	z-index: 99;
+	margin-top: 20px;
+}
+
+.saying {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+#greenblock {
+	z-index: -1;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 30%;
+	top: 0;
+	left: 0;
+	background: #00FF00;
+}
+
+#greengradiant {
+	z-index: -1;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 22.5%;
+	top: 30%;
+	left: 0;
+	background: linear-gradient(to bottom, #00FF00, white);
+}
+
+#all {
+	position: absolute;
+	display: block;
+	width: 100%;
+	left: 50%;
+	bottom: 1vw;
+	transform: translate(-50%);
+	text-align: center;
+}
+
+
+.open {
+	position: relative;
+	display: inline-block;
+	height: 49.35vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-left: 3vh;
+  	margin-right: 7vh;
+}
+
+.ann {
+	position: relative;
+	display: inline-block;
+	height: 35.4vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+.kwp {
+	position: relative;
+	display: inline-block;
+	height: 35.5vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 1.5vh;
+}
+
+.cond {
+	position: relative;
+	display: inline-block;
+	height: 77.5vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 6vh;
+}
+
+.jud {
+	position: relative;
+	display: inline-block;
+	height: 63.6vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 7vh;
+}
+
+.inq {
+	position: relative;
+	display: inline-block;
+	height: 56.6vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 3vh;
+}
+
+#title {
+	position: fixed;
+	top: 2vh;
+	left: 50%;
+	transform: translate(-50%);
+	width: 5vh;
+}
+
+#con {
+	position: fixed;
+	top: 2vh;
+	left: 50%;
+	transform: translate(-50%);
+	width: 2.5vh;
+}
+
+.prize1 {
+	position: relative;
+	display: inline-block;
+	height: 90vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-left: 3vh;
+  	margin-right: 0.75vh;
+}
+
+.prize2 {
+	position: relative;
+	display: inline-block;
+	height: 41.5vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0vh;
+}
+
+.prize3 {
+	position: relative;
+	display: inline-block;
+	height: 41.5vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 1.5vh;
+}
+
+.prize4 {
+	position: relative;
+	display: inline-block;
+	height: 62.4vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 4vh;
+}
+
+.prize5  {
+	position: relative;
+	display: inline-block;
+	height: 54vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+.prize6 {
+	position: relative;
+	display: inline-block;
+	height: 69.45vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+.prize7 {
+	position: relative;
+	display: inline-block;
+	height: 40.55vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 1.75vh;
+}
+
+.prize8 {
+	position: relative;
+	display: inline-block;
+	height: 75.45vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 1.25vw;
+}
+
+.prize9 {
+	position: relative;
+	display: inline-block;
+	height: 61.775vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0.75vw;
+}
+
+.prize10 {
+	position: relative;
+	display: inline-block;
+	height: 82.4vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0vh;
+}
+
+.prize11  {
+	position: relative;
+	display: inline-block;
+	height: 60.75vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0vh;
+}
+
+.prize12 {
+	position: relative;
+	display: inline-block;
+	height: 53.7vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+.form-control {
+	width: 100%;
+}
+
+#explain {
+	padding-bottom: 30px;
+}
+
+#apply {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	width: 500px;
+	line-height: 1.4;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+.logo {
+	position: relative;
+	bottom: 0.5vw;
+	width: 40px;
+	z-index: 99;
+	margin-top: 20px;
+}
+
+.awards {
+  position: fixed;
+  width: 500px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 900;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  padding: 15px 15px 5px 15px;
+  word-break: break-all;
+}
+
+.awards:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.smallclose {
+	position: relative;
+	display: block;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%);
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.website {
+	position: relative;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	font-size: 15px;
+	line-height: 1.4;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	white-space: normal;
+}
+
+.websitetitle,
+.domain {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.domain {
+	word-break: break-all;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+.website p {
+	position: relative;
+	display: block;
+	word-break: keep-all;
+	margin: 0;
+	font-size: 17px;
+}
+
+.reason {
+	padding-top: 15px;
+}
+
+.website a {
+	text-decoration: none;
+	word-break: keep-all;
+	color: white;
+}
+
+.saying p {
+	width: 800px;
+	white-space: normal;
+	word-break: keep-all;
+}
+
+#apply p {
+	white-space: normal;
+	word-break: keep-all;
+}
+
+.cut {
+    word-break: break-all;
+}
+
+
+@media screen and (max-width: 900px) {
+
+body {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow-x: scroll;
+	overflow-y: auto;
+	white-space: nowrap;
+}
+
+body::-webkit-scrollbar{ 
+	display: none; 
+}
+
+#all {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translate(0%);
+	padding-bottom: 15px;
+
+}
+
+#greenblock {
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height: 30%;
+	top: 0;
+	left: 0;
+	background-color: #00FF00;
+}
+
+#greengradiant {
+	z-index: -1;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 22.5%;
+	top: 30%;
+	left: 0;
+	background: linear-gradient(to bottom, #00FF00, white);
+}
+
+.open {
+	position: relative;
+	display: inline-block;
+	height: 49.35vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-left: 3vh;
+  	margin-right: 5vh;
+}
+
+.ann {
+	position: relative;
+	display: inline-block;
+	height: 35.4vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 3vh;
+}
+
+.kwp {
+	position: relative;
+	display: inline-block;
+	height: 35.5vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: -0.5vh;
+}
+
+.cond {
+	position: relative;
+	display: inline-block;
+	height: 77.5vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 3vh;
+}
+
+.jud {
+	position: relative;
+	display: inline-block;
+	height: 63.6vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+.inq {
+	position: relative;
+	display: inline-block;
+	height: 56.6vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 3vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 900;
+  background-color: white;
+  opacity: 0.5;
+  color: white;
+  padding: 20px;
+  white-space: normal;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.saying p {
+	width: 100%;
+}
+
+.prize1 {
+	position: relative;
+	display: inline-block;
+	height: 81vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-left: 3vh;
+  	margin-right: 0.75vh;
+}
+
+.prize2 {
+	position: relative;
+	display: inline-block;
+	height: 37.35vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0vh;
+}
+
+.prize3 {
+	position: relative;
+	display: inline-block;
+	height: 37.35vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 1.5vh;
+}
+
+.prize4 {
+	position: relative;
+	display: inline-block;
+	height: 56.16vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 4vh;
+}
+
+.prize5  {
+	position: relative;
+	display: inline-block;
+	height: 48.6vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+.prize6 {
+	position: relative;
+	display: inline-block;
+	height: 62.505vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+.prize7 {
+	position: relative;
+	display: inline-block;
+	height: 36.495vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 1.75vh;
+}
+
+.prize8 {
+	position: relative;
+	display: inline-block;
+	height: 67.905vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 1.25vw;
+}
+
+.prize9 {
+	position: relative;
+	display: inline-block;
+	height: 55.5975vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0.75vw;
+}
+
+.prize10 {
+	position: relative;
+	display: inline-block;
+	height: 74.16vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0vh;
+}
+
+.prize11  {
+	position: relative;
+	display: inline-block;
+	height: 54.675vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 0vh;
+}
+
+.prize12 {
+	position: relative;
+	display: inline-block;
+	height: 48.33vh;
+  	bottom: 0;
+  	left: 0;
+  	margin-right: 5vh;
+}
+
+#title {
+	position: fixed;
+	top: 15px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 7vh;
+}
+
+#apply {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	width: 80%;
+	line-height: 1.4;
+}
+
+.saying {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: 15px;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.logo {
+	position: relative;
+	bottom: 0.5vw;
+	width: 35px;
+	z-index: 99;
+}
+
+.saying p {
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.btn {
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.awards {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 900;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  padding: 15px 15px 5px 15px;
+  word-break: break-all;
+}
+
+.website p {
+	font-size: 14px;
+	width: 170px;
+	white-space: normal;
+}
+
+.domain a {
+	white-space: normal;
+	word-break: break-all;
+}
+
+p {
+	font-size: 15px;
+}
+
+#apply {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	line-height: 1.4;
+}
+
+#sections,
+#grouping {
+	position: relative;
+	display: block;
+	height: 8vh;
+	margin-bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#textlevel {
+	position: relative;
+	display: block;
+	height: 32vh;
+	margin-bottom: 15px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#concon {
+	position: absolute;
+	display: inline-block;
+	top: 80px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 90%;
+}
+
+#con {
+	position: fixed;
+	top: 2vh;
+	left: 50%;
+	transform: translate(-50%);
+	width: 3vh;
+}
+
+}

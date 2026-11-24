@@ -1,0 +1,668 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	word-break: keep-all;
+}
+
+@font-face {
+	font-family: SM3TaeMyungJo;
+	src: url(SM3TaeMyungJo.otf);
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: SM3TaeMyungJo;
+	overflow: hidden;
+}
+
+div {
+	font-size: 0;
+}
+
+#top {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#gg {
+	z-index: -1;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	background: linear-gradient(to bottom, #00FF00, white);
+}
+
+#logo {
+	width: 14vw;
+	margin-bottom: 1vw;
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#after_logo {
+	position: absolute;
+	display: inline-block;
+	width: 2vw;
+	bottom: 1vw;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#piece {
+	position: relative;
+	width: 90%;
+	margin-bottom: 1vw;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#one { 
+	position: absolute;
+	display: inline-block;
+	width: 33.33333%;
+	height: 50%;
+	left: 0;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 0.8vw;
+	overflow: scroll;
+}
+
+#one::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+#two { 
+	position: absolute;
+	display: inline-block;
+	width: 33.33333%;
+	height: 50%;
+	left: 33.33333%;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 0.8vw;
+	overflow: scroll;
+}
+
+#two::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+#three { 
+	position: absolute;
+	display: inline-block;
+	width: 33.33333%;
+	height: 50%;
+	left: 66.66666%;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 0.8vw;
+	overflow: scroll;
+}
+
+#three::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+#four { 
+	position: absolute;
+	display: inline-block;
+	width: 33.33333%;
+	height: 100%;
+	top: 50%;
+	left: 0%;
+	border-right: 1px solid black;
+	padding: 0.8vw;
+	overflow: scroll;
+}
+
+#four::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+#five { 
+	position: absolute;
+	display: inline-block;
+	width: 33.33333%;
+	height: 100%;
+	top: 50%;
+	left: 33.33333%;
+	border-right: 1px solid black;
+	padding: 0.8vw;
+	overflow: scroll;
+}
+
+#five::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+#six { 
+	position: absolute;
+	display: inline-block;
+	width: 33.33333%;
+	height: 100%;
+	top: 50%;
+	left: 66.66666%;
+	border-right: 1px solid black;
+	padding: 0.8vw;	
+	overflow: scroll;
+}
+
+#six::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+#seven { 
+	position: absolute;
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+	top: 0;
+	left: 50%;
+	overflow: auto;
+	mix-blend-mode: multiply;
+	padding: 0.8vw;
+	border-bottom: 1px solid black;
+}
+
+#seven {
+	    -ms-overflow-style: none; /* IE and Edge */
+	    scrollbar-width: none; /* Firefox */
+}
+
+#seven::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+#eight {
+	position: absolute;
+	display: inline-block;
+	width: 50%;
+	height: 50%;
+	top: 50%;
+	left: 50%;
+	padding: 0.8vw;
+}
+
+
+.name {
+	font-size: 2.2vw;
+	text-align: center;
+	font-family: SM3TaeMyungJo;
+	transform:scale(0.9,1); /* W3C */
+	-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+	-moz-transform:scale(0.9,1); /* Firefox */
+	-ms-transform:scale(0.9,1); /* IE 9 */
+	-o-transform:scale(0.9,1); /* Opera */
+	/* Rest Of CSS Code Here*/
+	margin-top: -1.2vw;
+	margin-bottom: -10px;
+}
+
+.sub {
+	font-size: 2.2vw;
+	font-family: Times New Roman;
+	transform:scale(0.9,1); /* W3C */
+	-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+	-moz-transform:scale(0.9,1); /* Firefox */
+	-ms-transform:scale(0.9,1); /* IE 9 */
+	-o-transform:scale(0.9,1); /* Opera */
+	/* Rest Of CSS Code Here*/
+	line-height: 0.8;
+	text-align: center;
+	margin-top: -1vw;
+}
+
+p {
+	font-size: 0.8vw;
+	line-height: 1.3;
+	margin-bottom: 0.1vw;
+	padding-top: 15px;
+}
+
+#question {
+	position: relative;
+	display: block;
+}
+
+.ex {
+	font-family: SM3TaeMyungJo;
+	font-size: 0.8vw;
+	line-height: 2;
+}
+
+#tri {
+	position: relative;
+	display: inline-block;
+	width: 35%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.mail {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	font-size: 2.5vw;
+	font-family: Times New Roman;
+	transform:scale(0.9,1); /* W3C */
+	-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+	-moz-transform:scale(0.9,1); /* Firefox */
+	-ms-transform:scale(0.9,1); /* IE 9 */
+	-o-transform:scale(0.9,1); /* Opera */
+	/* Rest Of CSS Code Here*/
+	line-height: 0.8;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 0.5vw;
+}
+
+.apply {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+.pt {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+.lotto {
+	position: relative;
+	background: linear-gradient(black, white, white, white, black);
+	mix-blend-mode: multiply;
+	margin-bottom: 10px;
+	height: 100%;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	overflow: scroll;
+}
+
+.lotto {
+	    -ms-overflow-style: none; /* IE and Edge */
+	    scrollbar-width: none; /* Firefox */
+}
+
+.lotto::-webkit-scrollbar {
+	    display: none; /* Chrome, Safari, Opera*/
+}
+
+.explain {
+	z-index: 99;
+	height: 100%;
+	color: white;
+	text-align: center;
+}
+
+.square {
+	background-color: black;
+	width: 50px;
+	height: 50px;
+}
+
+#saying {
+	position: relative;
+	font-size: 20px;
+	line-height: 1.5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 99;
+}
+
+#box {
+	position: absolute;
+	height: 100%;
+}
+
+#schedule {
+/*	display: inline-block;
+	font-size: 5vw;
+	text-align: center;
+	width: 50%;
+	vertical-align: top;*/
+}
+
+#apply {
+	margin-bottom: 2vw;
+}
+
+#apply p {
+	margin: 0;
+}
+
+li {
+	font-size: 18px;
+	list-style: none;
+	cursor: pointer;
+}
+
+button {
+	font-family: SM3TaeMyungJo;
+	font-size: 20px;
+	background-color: black;
+	color: white;
+	border-style: none;
+}
+
+fieldset {
+	margin-bottom: 10px;
+}
+
+input {
+	width: 100%;
+}
+
+.element {
+	font-size: 12vw;
+	font-family: Times New Roman;
+	transform:scale(0.9,1); /* W3C */
+	-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+	-moz-transform:scale(0.9,1); /* Firefox */
+	-ms-transform:scale(0.9,1); /* IE 9 */
+	-o-transform:scale(0.9,1); /* Opera */
+	/* Rest Of CSS Code Here*/
+	line-height: 0.95;
+	text-align: center;
+}
+
+.category {
+	font-size: 20px;
+}
+
+.rec {
+	background-color: black;
+}
+
+.vertical {
+	position: absolute;
+	width: 20%;
+	height: calc(100% - 1.6vw);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.square {
+	position: absolute;
+	width: 60%;
+	height: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.horizontal {
+	position: absolute;
+	width: calc(100% - 1.6vw);
+	height: 25%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	border-style: none;
+	color: white;
+	width: 80px;
+	height: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 15px;
+	font-family: Times New Roman;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+
+
+	p {
+		font-size: 15px;
+		width: 100%;
+	}
+
+	#top {
+		position: absolute;
+/*		display: block;*/
+		width: 100%;
+		height: 50%
+		top: 0;
+		left: 0;
+		overflow: scroll;
+	}
+
+	#top {
+		    -ms-overflow-style: none; /* IE and Edge */
+		    scrollbar-width: none; /* Firefox */
+	}
+
+	#top::-webkit-scrollbar {
+		    display: none; /* Chrome, Safari, Opera*/
+	}
+
+	#bottom {
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		bottom: 0;
+		left: 0;
+		overflow: scroll;
+		background-color: white;
+	}
+
+	#bottom {
+		    -ms-overflow-style: none; /* IE and Edge */
+		    scrollbar-width: none; /* Firefox */
+	}
+
+	#bottom::-webkit-scrollbar {
+		    display: none; /* Chrome, Safari, Opera*/
+	}
+
+	#logo {
+		width: 45vw;
+	}
+
+	#after_logo {
+		position: absolute;
+		display: inline-block;
+		width: 50px;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.name {
+		font-size: 30px;
+		text-align: center;
+		font-family: SM3TaeMyungJo;
+		transform:scale(0.9,1); /* W3C */
+		-webkit-transform:scale(0.9,1); /* Safari and Chrome */
+		-moz-transform:scale(0.9,1); /* Firefox */
+		-ms-transform:scale(0.9,1); /* IE 9 */
+		-o-transform:scale(0.9,1); /* Opera */
+		/* Rest Of CSS Code Here*/
+		margin-top: -4vw;
+		margin-bottom: -4vw;
+	}
+
+	#one { 
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 51%;
+		border-right: 0;
+		padding: 3vw;
+		
+	}
+
+	#two { 
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 51%;
+		left: 0;
+		padding: 3vw;
+		border-right: 0;
+	}
+
+	#three { 
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 51%;
+		left: 0;
+		padding: 3vw;
+		border-right: 0;
+		border-bottom: 1px solid black;
+	}
+
+	#four { 
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 51%;
+		padding: 1px;
+		top: 0;
+		left: 0;
+		padding: 3vw;
+		border-bottom: 1px solid black;
+	}
+
+	#five { 
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 75%;
+		top: 0;
+		padding: 3vw;
+		left: 0;
+		border-bottom: 1px solid black;
+	}
+
+	#six { 
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding: 3vw;
+		border-right: 0;
+		border-bottom: 1px solid black;
+	}
+
+	#seven { 
+		position: absolute;
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-bottom: 0;
+		padding: 0;
+		border-top: 1px solid black;
+		border-right: 1px solid black;
+
+	}
+
+	#eight { 
+		position: absolute;
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 50%;
+		border-bottom: 0;
+		border-top: 1px solid black;
+	}
+
+	#bottom {
+		margin: 0;
+		padding: 0;
+	}
+
+	#piece {
+		width: 45%;
+		margin-top: 20px;
+	}
+
+	#tri {
+		width: auto;
+		height: 45%;
+		margin-top: 20px;
+	}
+
+	.title {
+		font-size: 15vw; 
+	}
+
+	.ex {
+		font-size: 15px;
+	}
+
+	.sub {
+		font-size: 30px;
+	}
+
+	.element {
+		font-size: 15vw;
+	}
+
+	.mail {
+		font-size: 30px;
+		margin-top: 20px;
+	}
+
+	.lotto {
+		height: 100%;
+	}
+
+	#saying {
+		font-size: 15px;
+	}
+
+	.vertical {
+		position: absolute;
+		width: 100%;
+		height: 20%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);	
+	}
+
+	.square {
+		position: absolute;
+		width: 50%;
+		height: 60%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.horizontal {
+		position: absolute;
+		width: 25%;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);	
+	}
+}
