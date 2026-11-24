@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: sans-serif;
+  line-height: 1.2;
+}
+
+@font-face {
+  font-family: he;
+  src: url('./links/HelveticaNeueLTStdMd.otf');
+}
+
+body {
+  font-size: 20px;
+  background: white;
+  font-family: he;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  height: 70%;
+  background-color: transparent;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+h1 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 200%;
+  width: 98%;
+  padding-top: 2%;
+}
+
+.title {
+  font-size: 200%;
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  left: 0%;
+  background-color: transparent;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+h2 p {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  font-size: 90%;
+}
+
+a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: white;
+}
+
+a:hover {
+  color: blue;
+}

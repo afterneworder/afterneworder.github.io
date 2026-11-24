@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>랜덤 이름</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: limegreen;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+  </style>
+</head>
+<body onclick="showRandomName()">
+  <h1 id="name">🟢</h1>
+
+  <script>
+    const names = ["오은비", "허지선", "박병현", "지화인", "임채은", "김지수", "현지윤", "박예진", "꼬꼬", "은아", "민혜", "영조", "김태현", "윤현선", "성희", "김서연", "이지윤", "김태림", "신나리", "비비", "권수진", "임꽃신", "김유진", "이수연", "오성건", "송명선", "장민희", "신현진", "장혁", "막스", "정세원", "김영서", "아담", "장예원", "한용파", "유예린", "박성훈", "한예슬", "유지예", "윤수빈", "백창인", "김재연", "윤자영", "류리강", "송지민", "김채현", "황지은", "김한빈", "김현", "김연서", ];
+    
+    function showRandomName() {
+      const randomIndex = Math.floor(Math.random() * names.length);
+      const randomName = names[randomIndex];
+      document.getElementById("name").textContent = randomName;
+      document.body.style.backgroundColor = getRandomColor();
+    }
+
+  </script>
+</body>
+</html>
