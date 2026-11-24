@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+@font-face {
+  font-family: SM3TaeMyungJo;
+  src: url(fonts/SM3TaeMyungJo.otf);
+}
+
+@font-face {
+  font-family: SM3KMyungJo;
+  src: url(fonts/SM3KMyungJo.otf);
+}
+
+body {
+  margin: 15pt;
+  font-family: Times New Roman, SM3TaeMyungJo;
+  line-height: 1.4;
+  letter-spacing: -1;
+  word-break: keep-all;
+}
+
+h1 {
+  font-family: Times New Roman, SM3KMyungJo;  
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -1;
+}
+
+img{
+  width: 150px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+
+@media all and (min-width:768px) {
+
+  img {
+    width: 300px;
+    margin-top: 5px;
+    margin-right: 5px;
+    
+  }
+    
+}
+
+.lang{
+  position: absolute;
+  line-height: 0;
+  bottom: 15pt;
+  right: 15pt;
+}
