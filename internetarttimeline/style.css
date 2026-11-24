@@ -1,0 +1,41 @@
+
+body {
+    word-break: keep-all;
+    line-height: 1.6;
+    margin: 20px;
+  }
+
+  a {
+    color: blue;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  dt {
+    margin-top: 10px;
+  }
+
+  img {
+    max-height: 300px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  iframe {
+    display: block;
+  }
+
+  ul {
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  #category h2 {
+    display: inline;
+  }
