@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>이것은…</title>
+    <meta name="description" content="이것은…">
+    <meta name="keywords" content="이것은, Lee Jisu">
+    <meta itemprop="name" content="이것은">
+    <meta itemprop="description" content="이것은">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="이것은...">
+    <meta property="og:description" content="이것은…">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="이것은…">
+    <meta name="twitter:description" content="이것은…">
+    
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 100%;
+      }
+
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      html {
+        font-size: 16px;
+        background-color: white;
+      }
+
+    /*  @media screen and (min-width: 640px) {
+        html {
+          font-size: 2.5vw;
+        }
+      }*/
+
+      body {
+        position: relative;
+        font-family: serif;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        word-break: keep-all;
+        color: black;
+   
+      }
+
+      .imgcontainer {
+        position: absolute;
+        top: 0;
+        height: 50%;
+        width: 100%;
+}
+
+      .textcontainer {
+        position: absolute;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: serif;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      a {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        text-decoration: none;
+        color: inherit;
+        background-color: white;
+        outline: 0;
+      }
+
+      a::-webkit-scrollbar {
+        display: none;
+      }
+
+      a::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      a:not(:first-child) {
+        display: none;
+      }
+
+      a:target {
+        display: block;
+      }
+
+      a mark {
+        background-color: transparent;
+        font-family: serif;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+
+      a > figure {
+        width: calc(50% - .5rem);
+     /*   margin-top: .25rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;*/
+        -webkit-animation: fadeIn 2s;
+        animation: fadeIn 2s;
+      }
+
+ /*     @media screen and (min-width: 900px) {
+        a > figure {
+          width: calc(100% / 3 - .5rem);
+        }
+      }*/
+
+   /*   figure figure:not(:last-child) {
+        margin-bottom: 1rem;
+      }*/
+
+      a figure img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    object-position: center center;
+      }
+
+      a figure img:not(:last-of-type) {
+        margin-bottom: .5rem;
+      }
+
+
+      @-webkit-keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4vw;
+      }
+
+    </style>
+  </head>
+  <body ontouchstart="">
+    <a id="1" href="#2">
+      <p class="center">이것은…</p>
+    </a>
+
+    <a id="2" href="#3">
+      <figure>
+        <img class="imgcontainer" src="images/cloud.jpg" alt="파란 하늘에 흰 구름이 흩어져 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>가끔 구름이라 불린다.</mark></p></div>
+    </a>
+
+    <a id="3" href="#4">
+      <figure>
+        <img class="imgcontainer" src="images/closet.jpg" alt="나무 재질의 문 네 개가 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>누군가의 옷장 속에서 발견된다.</mark></p></div>
+    </a>
+
+    <a id="4" href="#5">
+      <figure>
+        <img class="imgcontainer" src="images/ground_water.jpg" alt="초록 풀과 나무로 덮인 산맥이 있다. 산 너머로 푸른 바다와 하늘, 흰 구름이 보인다.">
+      </figure>
+      <div class="textcontainer"><p><mark>땅 위에도 있고 바닷속에도 있다.</mark></p></div>
+    </a>
+
+     <a id="5" href="#6">
+      <figure>
+        <img class="imgcontainer" src="images/cylinder.jpg" alt="유리잔 세 개가 있다. 잔은 원기둥 모양이고 높이와 둘레가 서로 다르다.">
+      </figure>
+      <div class="textcontainer"><p><mark>빗물을 모은다.</mark></p></div>
+    </a>
+
+    <a id="6" href="#7">
+      <figure>
+        <img class="imgcontainer" src="images/desert.jpg" alt="선인장과 뾰족한 잎을 가진 초록 식물들이 가득 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>미국 서부에 가뭄을 악화시킨다.</mark></p></div>
+    </a>
+
+    <a id="7" href="#8">
+      <figure>
+        <img class="imgcontainer" src="images/keyhole.jpg" alt="금속 재질의 동그라미이다. 가운데 열쇠 구멍이 뚫려있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>무수한 비밀을 가지고 있다.</mark></p></div>
+    </a>
+
+    <a id="8" href="#9">
+      <figure>
+        <img class="imgcontainer" src="images/pocket.jpg" alt="청바지의 앞 주머니 부분을 확대한 모습이다.">
+      </figure>
+      <div class="textcontainer"><p><mark>바지 주머니에 보관할 수 있다.</mark></p></div>
+    </a>
+
+    <a id="9" href="#10">
+      <figure>
+        <img class="imgcontainer" src="images/longest.jpg" alt="연한 회색 배경 가운데에 검은 서체로 ‘Pneumonoultramicroscopicsilicovolcanoconiosis’가 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>세상에서 가장 긴 단어가 무엇인지 알려준다.</mark></p></div>
+    </a>
+
+    <a id="10" href="#11">
+      <figure>
+        <img class="imgcontainer" src="images/soup.jpg" alt="흰 그릇에 크림색 수프가 담겨있다. 수프 위와 그릇 바깥에는 동그란 비스켓이 흩어져 있다."> 
+      </figure>
+      <div class="textcontainer"><p><mark>뜨겁거나 미지근하다.</mark></p></div>
+    </a>
+
+    <a id="11" href="#12">
+      <figure>
+        <img class="imgcontainer" src="images/furniture.jpg" alt="책장 조립 설명서이다. 흰 배경에 검은 선으로 간략하게 그려져 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>가구처럼 조립이 가능하다.</mark></p></div>
+    </a>
+
+    <a id="12" href="#13">
+      <figure>
+        <img class="imgcontainer" src="images/tourist.jpg" alt="흰색 사탑의 일부가 있다. 배경에는 파란 하늘에 흰 구름이 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>길 잃은 여행객을 도와준다.</mark></p></div>
+    </a>
+
+    <a id="13" href="#14">
+      <figure>
+        <img class="imgcontainer" src="images/southpole_chuncheon.jpg" alt="2분할 된 화면의 왼쪽에는 눈이 뒤덮인 산이, 오른쪽에는 초록 산이 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>남극에도 있고 춘천에도 있다.</mark></p></div>
+    </a>
+
+    <a id="14" href="#15">
+      <figure>
+        <img class="imgcontainer" src="images/loud.jpg" alt="마이크를 든 사람과 기타를 든 사람이 있는 흑백사진이다.">
+      </figure>
+      <div class="textcontainer"><p><mark>귀가 멍멍해질 정도로 시끄럽다.</mark></p></div>
+    </a>
+
+    <a id="15" href="#16">
+      <figure>
+        <img class="imgcontainer" src="images/duplicate.jpg" alt="똑같은 흰 양 두 마리가 잔디 위에 나란히 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>복제 가능하다.</mark></p></div>
+    </a>
+
+    <a id="16" href="#17">
+      <figure>
+        <img class="imgcontainer" src="images/wave.jpg" alt="파도가 치는 푸른 바다다.">
+      </figure>
+      <div class="textcontainer"><p><mark>쉬지 않는다.</mark></p></div>
+    </a>
+
+    <a id="17" href="#18">
+      <figure>
+        <img class="imgcontainer" src="images/dogs.jpg" alt="종이 다른 개 여러 마리가 화면 정면을 향해 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>개의 종류만큼 크기가 다양하다.</mark></p></div>
+    </a>
+
+    <a id="18" href="#19">
+      <figure>
+        <img class="imgcontainer" src="images/aisle.jpg" alt="마트의 실내이다. 물건이 가지런히 차 있는 선반이 여러 개 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>대형 마트처럼 복도를 여러 개 가지고 있다.</mark></p></div>
+    </a>
+
+    <a id="19" href="#20">
+      <figure>
+        <img class="imgcontainer" src="images/hidden.jpg" alt="쪼개진 포춘 쿠키가 있다. 쿠키 안에서 나온 쪽지에는 글귀가 쓰여있다. 글귀는 다음과 같다.  ‘It is quality rather than quantity that matters. Do a good job tomorrow.">
+      </figure>
+      <div class="textcontainer"><p><mark>숨겨져 있다.</mark></p></div>
+    </a>
+
+    <a id="20" href="#21">
+      <figure>
+        <img class="imgcontainer" src="images/pillow.jpg" alt="흰 베개 두 개가 쌓여 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>배게와 베개 중 올바른 맞춤법을 알려준다.</mark></p></div>
+    </a>
+
+    <a id="21" href="#22">
+      <figure>
+        <img class="imgcontainer" src="images/reptile.jpg" alt="연두색 카멜레온이 나뭇가지 위에 누워있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>파충류처럼 온도와 습도에 예민하다.</mark></p></div>
+    </a>
+
+    <a id="22" href="#23">
+      <figure>
+        <img class="imgcontainer" src="images/connected.jpg" alt="빨간 실로 실뜨기를 하는 손 네 개가 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>서로 연결되어 있다.</mark></p></div>
+    </a>
+
+    <a id="23" href="#24">
+      <figure>
+        <img class="imgcontainer" src="images/palm.jpg" alt="두 손바닥 위에 커다란 비눗방울이 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>손바닥 위에 올려놓을 수 있다.</mark></p></div>
+    </a>
+
+    <a id="24" href="#25">
+      <figure>
+        <img class="imgcontainer" src="images/farm.jpg" alt="초원 위에 소와 양들이 흩어져있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>가끔 농장이라 불린다.</mark></p></div>
+    </a>
+
+    <a id="25" href="#26">
+      <figure>
+        <img class="imgcontainer" src="images/leaves.jpg" alt="마른 낙엽이 가득하다.">
+      </figure>
+      <div class="textcontainer"><p><mark>밟으면 부서진다.</mark></p></div>
+    </a>
+
+    <a id="26" href="#27">
+      <figure>
+        <img class="imgcontainer" src="images/carol.jpg" alt="여러 사람이 화면 정면을 향하고 노래를 부르고 있다. 그 중 세 사람은 산타 모자를 썼다.">
+      </figure>
+      <div class="textcontainer"><p><mark>크리스마스 캐롤을 재생한다.</mark></p></div>
+    </a>
+
+    <a id="27" href="#28">
+      <figure>
+        <img class="imgcontainer" src="images/palmreading.jpg" alt="손 모양의 흰 도자기이다. 손바닥 위에 글씨와 화살표들이 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>미래를 예언한다.</mark></p></div>
+    </a>
+
+    <a id="28" href="#29">
+      <figure>
+        <img class="imgcontainer" src="images/archive.jpg" alt="나무 재질의 서랍이다. 서랍은 칸이 많고 그 중 하나가 열려 있다. 서랍 안에는 종이가 차곡차곡 들어있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>수많은 서랍을 가지고 있다.</mark></p></div>
+    </a>
+
+    <a id="29" href="#30">
+      <figure>
+        <img class="imgcontainer" src="images/soil.jpg" alt="갈색 흙이 화면 가득 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>상추를 키운다.</mark></p></div>
+    </a>
+
+    <a id="30" href="#31">
+      <figure>
+        <img class="imgcontainer" src="images/names.jpg" alt="신생아 여러 명이 나란히 각자의 침대에 누워있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>이름을 수집한다.</mark></p></div>
+    </a>
+
+    <a id="31" href="#32">
+      <figure>
+        <img class="imgcontainer" src="images/terror.jpg" alt="리트리버 한 마리가 바닥에 엎드려 있고 주변에 찢어진 종이가 흩어져 있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>테러의 위험이 있다.</mark></p></div>
+    </a>
+
+    <a id="32" href="#33">
+      <figure>
+        <img class="imgcontainer" src="images/hungarianjapanese.jpg" alt="헝가리어를 일본어로 번역한 내용이 쓰여 있는 번역기의 모습이다.">
+      </figure>
+      <div class="textcontainer"><p><mark>헝가리어를 일본어로 바꾼다.</mark></p></div>
+    </a>
+
+    <a id="33" href="#34">
+      <figure>
+        <img class="imgcontainer" src="images/news.jpg" alt="하늘색 배경 가운데에 민들레 한 송이가 있다. 민들레에는 꽃씨가 가득 달려있다.">
+      </figure>
+      <div class="textcontainer"><p><mark>모든 종류의 소식을 전달한다.</mark></p></div>
+    </a>
+
+    <a id="34" href="#35">
+      <figure>
+        <img class="imgcontainer" src="images/water.jpg" alt="동그란 파란 튜브이다.">
+      </figure>
+      <div class="textcontainer"><p><mark>물이 필요하다.</mark></p></div>
+    </a>
+
+     <a id="35" href="https://afterneworder.com"></a>
+
+
+
+  </body>
+</html>
