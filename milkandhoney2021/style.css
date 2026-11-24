@@ -1,0 +1,545 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+  font-family: serif;
+	word-wrap: break-word;
+}
+
+body::-webkit-scrollbar { 
+    display: none !important; 
+}
+
+.mobile {
+  display: none;
+}
+
+.land {
+	position: absolute;
+  display: block;
+	width: 20px;
+	height: 100%;
+	background-color: #feecce;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9;
+	font-size: 16px;
+	text-align: center;
+}
+
+.vertical {
+	position: relative;
+	cursor: pointer;
+  height: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 1.2;
+  text-align: center;
+  vertical-align: center;
+}
+
+.live {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+  font-size: 0px;
+}
+
+.box {
+  position: absolute;
+	width: calc(100% / 3);
+	height: 50%;
+	vertical-align: top;
+	font-size: 16px;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+.ready {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c {
+  top: 0;
+  left: 0;
+  background-color: #EFEFEF;
+}
+
+.j {
+  position: absolute;
+  top: 0;
+  left: calc(100% / 3);
+  background-color: #FDFAF6;
+}
+
+.y {
+  position: absolute;
+  top: 0;
+  left: calc(100% / 3 * 2);
+  background-color: #F7F0E7;
+}
+
+.t {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #F0E8DD
+}
+
+.s {
+  top: 50%;
+  left: calc(100% / 3);
+  background-color: #F2EEE9;
+}
+
+.g  {
+  position: absolute;
+  top: 50%;
+  left: calc(100% / 3 * 2);
+  background-color: white;
+}
+
+.san {
+  height: 100%;
+  object-fit: cover;
+}
+
+.fb {
+  height: 100%;
+}
+
+.injil {
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.jam {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.gbr {
+  position: relative;
+  display: inline-block;
+  height: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.ice {
+  position: relative;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.apple {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.glass {
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  z-index: 9;
+  mix-blend-mode: multiply;
+}
+
+.snow {
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+  text-align: right;
+}
+
+.name {
+  position: absolute;
+	background-color: white;
+  color: black;
+  cursor: help;
+  top: 92%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  word-wrap: normal;
+}
+
+.website {
+	position: absolute;
+	top: 0;
+	left: calc(50% + 10px);
+	width: calc(50% - 10px);
+	height: 50%;
+	font-size: 16px;
+  word-break: keep-all;
+  background-color: white;
+}
+
+.click {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
+.guest {
+	position: absolute;
+	top: 50%;
+	left: calc(50% + 10px);
+	width: calc(50% - 10px);
+	height: 50%;
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+}
+
+
+/* ----------------------- 한마디 ----------------------- */
+.c .ctext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 9;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  word-break: keep-all;
+}
+
+.c .ctext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  z-index: 99;
+}
+
+.c:hover .ctext {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+.j .jtext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  word-break: keep-all;
+}
+
+.j .jtext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.j:hover .jtext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.y .ytext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  word-break: keep-all;
+}
+
+.y .ytext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.y:hover .ytext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.t .ttext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  word-break: keep-all;
+}
+
+.t .ttext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.t:hover .ttext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s .stext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  word-break: keep-all;
+}
+
+.s .stext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.s:hover .stext {
+  visibility: visible;
+  opacity: 1;
+}
+.g .gtext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  word-break: keep-all;
+}
+
+.g .gtext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.g:hover .gtext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+	.land {
+		position: absolute;
+		width: 100%;
+		height: 30px;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		z-index: 9;
+		font-size: 20px;
+		text-align: center;
+	}
+
+ .injil {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .san {
+    widht: 100%;
+    object-fit: cover;
+  }
+
+  .apple {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ice {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .jam {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .gbr {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .snow {
+    width: 100%;
+  }
+
+	.live {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(50% - 10px);
+	}
+
+	.name {
+    position: absolute;
+    background-color: whitesmoke;
+    color: black;
+    cursor: help;
+    top: 90%;
+    left: 50%;
+    width: auto;
+    font-size: 20px;
+    z-index: 99;
+  }
+
+	.website {
+		position: absolute;
+		display: inline-block;
+		top: calc(50% + 10px);
+		left: 0;
+		width: 50%;
+		height: calc(50% - 10px);
+		text-align: center;
+	}
+
+  .click {
+    font-size: 20px;
+  }
+  
+	.guest {
+		top: 50%;
+		left: 50%;
+		width: 50%;
+		height: 50%;
+		-webkit-filter: grayscale(100%);
+		filter: gray;
+	}
+
+}
